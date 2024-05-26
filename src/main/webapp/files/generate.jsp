@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+		 pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,9 +7,11 @@
 <title>Generate</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="css/all.min.css">
-	<%@include
-	file = "style.css"
-	%>
+	<style type="text/css">
+		<%@include
+                file = "style.css"
+        %>
+	</style>
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
 	
@@ -29,7 +32,7 @@
 
 	<main>
 		<div class="gen-main">
-			<form action="calculate.html">
+			<form action="calculate.jsp">
 
 				<label> <strong> Meter Id: </strong></label> <input class="field"
 					type="search" placeholder="Meter Id" name="meter-id"> <br>

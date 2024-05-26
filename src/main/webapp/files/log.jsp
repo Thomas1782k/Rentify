@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+		 pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,9 +7,11 @@
 <title>Login</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="css/all.min.css">
-	<%@include
-	file = "style.css"
-	%>
+	<style type="text/css">
+		<%@include
+                file = "style.css"
+        %>
+	</style>
 
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -20,29 +23,29 @@
 </head>
 <body>
 
-	<div class="r-log">
-		<img class="clogo" alt="clogo" src="Clogo.svg"> <i
-			class="fa-solid fa-bolt-lightning font1"></i>
-	</div>
+<%--	<div class="r-log">--%>
+<%--		<img class="clogo" alt="clogo" src="Clogo.svg"> <i--%>
+<%--			class="fa-solid fa-bolt-lightning font1"></i>--%>
+<%--	</div>--%>
 	<h1 class="head">
-		Electricity Bill Payment <i class="fa-solid fa-bolt-lightning "></i>
+		Rentify <i class="fa-solid fa-bolt-lightning "></i>
 	</h1>
 	<main class="log-main">
 		<div class="login">
 			<h4>
 				Welcome back <i class="fa-solid fa-face-smile smiley"></i>
 			</h4>
-			<form action="welcome.html" >
+			<form action="loginAuth" method="post">
 				<table>
 					<tr>
 						<td><label><i class="fa-solid fa-user up"></i> User
 								id:</label></td>
-						<td><input class="field" type="email" name="uid"></td>
+						<td><input class="field" type="email" name="email"></td>
 					</tr>
 					<tr>
 						<td><label><i class="fa-solid fa-key up"></i>
 								Password:</label></td>
-						<td><input class="field" type="password" name="upass"></td>
+						<td><input class="field" type="password" name="password"></td>
 					</tr>
 				</table>
 				<button class="calc c1" type="submit">
@@ -59,7 +62,7 @@
 			<input type="checkbox"><span class="remember">remember
 				me</span> New user?
 		</h3>
-		<a href="signup.html"><h3>click me!</h3></a>
+		<a href="signup.jsp"><h3>click me!</h3></a>
 	</div>
 </body>
 </html>

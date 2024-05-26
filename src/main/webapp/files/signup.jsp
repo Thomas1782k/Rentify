@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+		 pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,9 +7,11 @@
 <title>SignUp</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="css/all.min.css">
-	<%@include
-	file = "style.css"
-	%>
+	<style type="text/css">
+		<%@include
+                file = "style.css"
+        %>
+	</style>
 
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
@@ -21,32 +24,36 @@
 	
 </head>
 <body>
-
-
-
 	<div class="r-log">
 		<img class="clogo" alt="clogo" src="Clogo.svg"> <i
 			class="fa-solid fa-bolt-lightning font1"></i>
 	</div>
 	<h1 class="head">
-		Electricity Bill Payment <i class="fa-solid fa-bolt-lightning "></i>
+		Rentify <i class="fa-solid fa-bolt-lightning "></i>
 	</h1>
 	<main class="signup-main">
 
 		<div class="register">
-			<form class="form" action="log.jsp" >
+			<form class="form" action="registerForm" >
 				<table>
 					<tr>
 						<td><label>First Name: </label></td>
-						<td><input class="field" type="text" name="fname" placeholder="First Name"></td>
+						<td><input class="field" type="text" name="firstName" placeholder="First Name"></td>
 					</tr>
 					<tr>
 						<td><label>Last Name: </label></td>
-						<td><input class="field" type="text" name="lname" placeholder="Last Name"></td>
+						<td><input class="field" type="text" name="lastName" placeholder="Last Name"></td>
 					</tr>
 					<tr>
-						<td><label>EB Id: </label></td>
-						<td><input class="field" type="text" name="ebid" placeholder="EB Id"></td>
+						<td><label>Type: </label></td>
+						<td><select id="type" name="type" class="field">
+							<option selected>Buyer</option>
+							<option>Seller</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><label>Phone Number: </label></td>
+						<td><input class="field" type="text" name="phoneNumber" placeholder="Phone Number"></td>
 					</tr>
 					<tr>
 						<td><label>Email: </label></td>
@@ -62,10 +69,7 @@
 						<td><input class="field" type="text" name="district" placeholder="District">
 						</td>
 					</tr>
-					<tr>
-						<td><label>State: </label></td>
-						<td><input class="field" type="text" name="state" placeholder="State"></td>
-					</tr>
+
 				</table>
 				<button class="calc c1" type="submit">
 					<i class="fa-solid fa-circle-check"></i>
@@ -78,7 +82,7 @@
 	</main>
 	<div class="reg signup-reg">
 		<h3>Already user?</h3>
-		<a href="log.jsp"><h3>click me!</h3></a>
+		<a href="log"><h3>click me!</h3></a>
 	</div>
 </body>
 </html>

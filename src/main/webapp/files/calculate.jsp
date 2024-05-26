@@ -1,13 +1,16 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+		 pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Calculate</title>
 <link rel="stylesheet" href="style.css">
-	<%@include
-	file = "style.css"
-	%>
+	<style type="text/css">
+		<%@include
+                file = "style.css"
+        %>
+	</style>
 
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">

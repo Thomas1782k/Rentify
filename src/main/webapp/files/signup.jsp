@@ -77,9 +77,6 @@
 			</form>
 		</div>
 	</main>
-	<div class="reg signup-reg">
-		<h3>Already user?</h3>
-		<a href="log"><h3>click me!</h3></a>
-	</div>
+
 </body>
 </html>

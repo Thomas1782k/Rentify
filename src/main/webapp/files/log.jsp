@@ -57,12 +57,6 @@
 			</form>
 		</div>
 	</main>
-	<div class="reg">
-		<h3>
-			<input type="checkbox"><span class="remember">remember
-				me</span> New user?
-		</h3>
-		<a href="signup.jsp"><h3>click me!</h3></a>
-	</div>
+
 </body>
 </html>

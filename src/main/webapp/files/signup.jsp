@@ -24,10 +24,7 @@
 	
 </head>
 <body>
-	<div class="r-log">
-		<img class="clogo" alt="clogo" src="Clogo.svg"> <i
-			class="fa-solid fa-bolt-lightning font1"></i>
-	</div>
+
 	<h1 class="head">
 		Rentify <i class="fa-solid fa-bolt-lightning "></i>
 	</h1>

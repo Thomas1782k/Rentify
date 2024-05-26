@@ -75,14 +75,6 @@ This is a Spring Boot web application for managing rental properties. It allows 
 
 - Once logged in as a seller, you can post new properties and manage existing ones.
 
-## Endpoints
-
-- `/` - Home page
-- `/users/register` - User registration page
-- `/users/login` - User login page
-- `/properties` - List of properties (paginated)
-- `/properties/delete/{id}` - Delete a property by ID
-
 ## Pagination
 
 - The property listing page supports pagination. Use the "Previous" and "Next" links to navigate through pages.
